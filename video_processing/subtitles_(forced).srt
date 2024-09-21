@@ -1,0 +1,144 @@
+1
+00:02:52,764 --> 00:02:57,764
+<font size="24" color="#3c3d28"><b>{\an8}Warning!
+<font size="20"><font color="#423539">Entering These Premises Is Forbidden!
+Many Have Gone Missing!</font></font></b></font>
+
+2
+00:03:11,944 --> 00:03:16,244
+<font face="Times New Roman" size="36" color="#000000"><b>{\an8}JUJUTSU KAISEN</b></font>
+
+3
+00:03:35,804 --> 00:03:37,014
+<font face="Trebuchet MS" size="24"><font face="Comic Sans MS"><font size="12"><font color="#102530">...True.</font></font></font></font>
+
+4
+00:10:58,574 --> 00:11:03,334
+<font face="Times New Roman" size="36" color="#000000"><b>{\an8}JUJUTSU KAISEN
+<font size="16">Hidden Inventory/Premature Death</font></b></font>
+
+5
+00:12:18,974 --> 00:12:21,314
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 140 0 l 140 200 l 0 200</font></font>
+
+6
+00:12:18,974 --> 00:12:21,314
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="14"><font color="#000000"><b>Jujutsu High
+Second-Year
+<font size="30">Satoru
+Gojo</font></b></font></font></font></font>
+
+7
+00:12:21,314 --> 00:12:26,524
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 100 0 l 100 140 l 0 140</font></font>
+
+8
+00:12:21,314 --> 00:12:26,524
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="12"><font color="#000000"><b>Second-grade
+Sorcerer
+<font size="24">Utahime
+Iori</font></b></font></font></font></font>
+
+9
+00:12:26,524 --> 00:12:29,274
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 140 0 l 140 200 l 0 200</font></font>
+
+10
+00:12:26,524 --> 00:12:29,274
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="18"><font color="#000000"><b>First-grade
+Sorcerer
+<font size="30">Mei Mei</font></b></font></font></font></font>
+
+11
+00:12:49,214 --> 00:12:51,964
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 136 0 l 136 200 l 0 200</font></font>
+
+12
+00:12:49,214 --> 00:12:51,964
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="14"><font color="#000000"><b>Jujutsu High
+Second-Year
+<font size="30">Suguru
+Geto</font></b></font></font></font></font>
+
+13
+00:13:05,354 --> 00:13:10,734
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 136 0 l 136 200 l 0 200</font></font>
+
+14
+00:13:05,354 --> 00:13:10,734
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="14"><font color="#000000"><b>Jujutsu High
+Second-Year
+<font size="30">Shoko
+Ieiri</font></b></font></font></font></font>
+
+15
+00:13:20,244 --> 00:13:26,544
+<font face="Trebuchet MS" size="24"><font color="#f6f9f8">{\an5}m 0 0 l 50 0 l 50 140 l 0 140</font></font>
+
+16
+00:13:20,244 --> 00:13:26,544
+<font face="Trebuchet MS" size="24"><b><font face="Arial">{\an5}<font size="20"><font color="#313332">Said
+Trash</font></font></font></b></font>
+
+17
+00:14:02,284 --> 00:14:05,664
+<font face="Trebuchet MS" size="24"><font color="#d0e0e1"><font size="16">{\an7}White
+\h\hNews</font></font></font>
+
+18
+00:14:02,284 --> 00:14:05,664
+<font face="Trebuchet MS" size="24"><font color="#d0e0e1"><font size="15">{\an3}Degradation of gas pipes causes explosion</font></font></font>
+
+19
+00:14:12,594 --> 00:14:15,134
+<font face="Trebuchet MS" size="24">{\an5}<font color="#f9f9f9">m 0 0 l 126 0 l 126 184 l 0 184</font></font>
+
+20
+00:14:12,594 --> 00:14:15,134
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="18"><font color="#000000"><b>First-grade
+Sorcerer
+<font size="29">Masamichi
+Yaga</font></b></font></font></font></font>
+
+21
+00:14:23,054 --> 00:14:23,814
+<font face="Trebuchet MS" size="24">{\an8}<font face="Times New Roman"><b><font size="40"><font color="#000000">Discipline</font></font></b></font></font>
+
+22
+00:17:29,784 --> 00:17:31,534
+<font face="Trebuchet MS" size="24">{\an8}<font size="16"><font face="Times New Roman"><font color="#2b362a">Tokyo Jujutsu High School</font></font></font></font>
+
+23
+00:20:25,944 --> 00:20:26,334
+<font face="Trebuchet MS" size="24"><b><font color="#000000">Ah</font></b></font>
+
+24
+00:20:39,014 --> 00:20:42,274
+<font face="Trebuchet MS" size="24">{\an5}<font color="#fafafa">m 0 0 l 112 0 l 112 164 l 0 164</font></font>
+
+25
+00:20:39,014 --> 00:20:42,274
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="18"><font color="#000000"><b>Q
+Combatant
+<font size="30">Kokun</font></b></font></font></font></font>
+
+26
+00:21:14,174 --> 00:21:16,134
+<font face="Trebuchet MS" size="24">{\an5}<font color="#fafafa">m 0 0 l 136 0 l 136 164 l 0 164</font></font>
+
+27
+00:21:14,174 --> 00:21:16,134
+<font face="Trebuchet MS" size="24">{\an5}<font face="Times New Roman"><font size="18"><font color="#000000"><b>Q
+Combatant
+<font size="30">Bayer</font></b></font></font></font></font>
+
+28
+00:22:06,984 --> 00:22:09,984
+<font face="Times New Roman" size="24"><b>Episode 25
+<font size="30">Hidden Inventory</font></b></font>
+
+29
+00:23:47,514 --> 00:23:55,004
+<font face="Times New Roman" size="24"><b><font color="#ffffff">Next Episode
+<font size="30">Hidden Inventory 2</font></font></b></font>
+

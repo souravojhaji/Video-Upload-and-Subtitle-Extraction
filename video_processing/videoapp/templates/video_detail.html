@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Subtitles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .subtitle-link {
+            cursor: pointer;
+        }
+        .subtitle-link:hover {
+            text-decoration: underline;
+        }
+        /* Style for displaying current time */
+        .current-time {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Video Player -->
+        <video id="videoPlayer" src="{{ video.file.url }}" type="video/mp4" controls preload="metadata" class="w-100"></video>
+
+        <!-- Display current time -->
+        <div id="currentTimeDisplay" class="current-time">Current Time: 0</div>
+
+        <!-- Subtitles Section -->
+        <div><h3 class="mt-4">Subtitles</h3> <a href="{% url 'video_list' %}" class="upload-btn">Video List</a></div>
+        <form method="GET" action="{% url 'search_subtitle' video.id %}" class="mt-3">
+            <div class="input-group">
+                <!-- <input type="text" name="q" class="form-control" placeholder="Search subtitles"> -->
+                <select name="language" class="form-control ml-2">
+                    {% for lang in all_languages %}
+                        <option value="{{ lang }}">{{ lang|upper }}</option>
+                    {% endfor %}
+                </select>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        
+        <ul class="list-group">
+            {% for subtitle in subtitles %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ subtitle.content }}
+                <a href="#" class="subtitle-link" data-time="{{ subtitle.timestamp }}">
+                    <span class="badge badge-primary badge-pill">{{ subtitle.timestamp }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to handle timestamp clicks -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const videoPlayer = document.getElementById('videoPlayer');
+        const currentTimeDisplay = document.getElementById('currentTimeDisplay');
+        const subtitleLinks = document.querySelectorAll('.subtitle-link');
+
+        // Function to update the current time display
+        function updateCurrentTimeDisplay() {
+            const currentTime = videoPlayer.currentTime.toFixed(2); // Get current time and format it to 2 decimal places
+            currentTimeDisplay.textContent = `Current Time: ${currentTime} seconds`;
+        }
+
+        // Event listener to update the current time display as the video plays
+        videoPlayer.addEventListener('timeupdate', updateCurrentTimeDisplay);
+
+        subtitleLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent the default link behavior
+
+                // Get the timestamp from the 'data-time' attribute
+                const timestamp = this.getAttribute('data-time').split(' --> ')[0];
+
+                // Log the clicked timestamp for debugging
+                console.log('Clicked subtitle with timestamp:', timestamp);
+
+                // Convert timestamp (HH:MM:SS or HH:MM:SS.mmm) to seconds
+                const timeParts = timestamp.split(':');
+                let hours = 0, minutes = 0, seconds = 0;
+                
+                if (timeParts.length === 3) {
+                    hours = parseFloat(timeParts[0]) || 0;
+                    minutes = parseFloat(timeParts[1]) || 0;
+                    seconds = parseFloat(timeParts[2]) || 0;
+                } else if (timeParts.length === 2) {
+                    minutes = parseFloat(timeParts[0]) || 0;
+                    seconds = parseFloat(timeParts[1]) || 0;
+                } else if (timeParts.length === 1) {
+                    seconds = parseFloat(timeParts[0]) || 0;
+                }
+
+                const timestampInSeconds = hours * 3600 + minutes * 60 + seconds;
+
+                // Log the parsed timestamp in seconds for debugging
+                console.log(`Parsed timestamp: ${timestampInSeconds} seconds`);
+
+                // Log the current time before setting it
+                console.log('Video current time before:', videoPlayer.currentTime);
+
+                // Check if the timestamp is valid and handle the video player accordingly
+                if (!isNaN(timestampInSeconds)) {
+                    if (videoPlayer.readyState >= 1) {
+                        videoPlayer.currentTime = timestampInSeconds;
+                        videoPlayer.play();
+                    } else {
+                        videoPlayer.addEventListener('loadedmetadata', () => {
+                            videoPlayer.currentTime = timestampInSeconds;
+                            videoPlayer.play();
+                        }, { once: true });
+                    }
+
+                    // Log the current time after setting it
+                    console.log('Video current time after:', videoPlayer.currentTime);
+
+                    // Update the current time display right after setting the time
+                    updateCurrentTimeDisplay();
+                } else {
+                    console.error('Invalid timestamp:', timestamp);
+                }
+            });
+        });
+      });
+    </script>
+</body>
+</html>

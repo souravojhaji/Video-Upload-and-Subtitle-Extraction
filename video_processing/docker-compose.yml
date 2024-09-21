@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: video_processing
+      POSTGRES_USER: video_processing
+      POSTGRES_PASSWORD: video
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+      - ./media:/app/media
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
